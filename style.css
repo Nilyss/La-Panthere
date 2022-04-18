@@ -136,6 +136,27 @@ a:hover {
     color: rgba(255, 255, 255, .6);
 }
 
+.agenceInfo {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.agenceReview {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-style: oblique;
+}
+
+.agenceReviewCaption {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+}
+
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
@@ -709,11 +730,15 @@ h2 {
     line-height: 1.4em;
 }
 
+.portFolio {
+    font-family: "helvetica";
+    width: 45%;
+    margin: auto;
+}
+
 h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
+    font-size: 22px;
+    line-height: 1.4em;
 }
 
 .med-width-whitespace {
@@ -727,6 +752,10 @@ h1 {
 }
 
 h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
     color: #333333!important;
 }
 
