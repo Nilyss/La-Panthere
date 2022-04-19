@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!-- <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design"> --> <!--Suppression de balise inutile au référencement SEO-->
-    <meta name="description" content=""> <!-- Ajout d'une description du contenu de la page -->
+    <meta name="description" content="La Panthère est une agence de web desing qui aide les entreprises à devenir attractives et visibles sur Internet"> <!-- Ajout d'une description du contenu de la page -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta name="robots" content="index, follow"/> <!-- Ajout meta afin d'indexer correctement les pages du site web -->
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
@@ -14,10 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<!-- déplace script à la fin du body afin de gagner en performance -->
+
 	<!-- <script src="./js/gmaps.js"></script> --> <!-- Script JS sans utilitée, aucune map n'est charger sur le site -->
 
     <title>La Panthère - Agence de web desing</title> <!-- Definition d'un title // SEO -->
@@ -39,21 +37,25 @@
 		<nav class="navbar row">
 			<header class="navbar-header"> <!-- Remplacement <div> par balise <header>-->
 				<!-- <div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div> --> <!-- Supression ligne Keyword : Non utilisé par algo Google -->
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="logo agence la panthere" height="40" /></a> <!-- modification alt pour accecibilité -->
+				<a class="focus-only navbar-brand" href="index.html" title="Acceuil">
+					<figure>
+						<img src="img/agence-la-panthere-monochrome.svg" alt="Logo agence la Panthère" height="40" />
+					</figure>
+				</a> <!-- modification alt pour accecibilité -->
 				<!-- <div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div> --> <!-- Supression ligne Keyword : Non utilisé par algo Google -->
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					<span class="sr-only" title="Page d'acceuil">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</header>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
+						<a href="index.html" class="focus-only" title="Acceuil">Accueil</a>
 					</li>
 					<li>
 					</li>
 					<li>
-						<a href="page2.html">Contact</a> <!-- La seconde page étant un formulaire de contact, modifie le nom du lien-->
+						<a href="page2.html" class="focus-only" title="Contact">Contact</a> <!-- La seconde page étant un formulaire de contact, modifie le nom du lien-->
 					</li>
 				</ul>
 			</div>
@@ -72,7 +74,7 @@
 					Agence La Panthère
 				</h1>
 				<div class="text-center">
-					<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
+					<a href="page2.html" class="focus-only btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero" title="Contact">Contact</a>
 				</div>
 			</figure>
 		</div>
@@ -144,7 +146,8 @@
 					Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<br>
 				</h2>
 				<p class="text-center white">
-					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br><a class="ltc-white bold-link" href="page2.html">Contactez notre équipe</a><br>
+					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br>
+					<a class="focus-only ltc-white bold-link" href="page2.html" title ="contact" class="Contact">Contactez notre équipe</a><br>
 				</p>
 			</div>
 		</div>
@@ -163,7 +166,11 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" /></a>
+				<a href="#" class="focus-only" title="Porte folio" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
+					<figure>
+						<img src="img/1.jpg" alt="Image refonte d'un site web pour un journal local" class="img-responsive portfolio-thumb" /> <!-- Modification alt -->
+					</figure>
+				</a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -172,7 +179,11 @@
 				</p>
 			</div>
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
+				<a href="#" class="focus-only" title="Porte folio" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
+					<figure>
+						<img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="image création d'un site web pour photographes" /> <!-- Modification alt-->
+					</figure>
+				</a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
@@ -183,7 +194,11 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
+				<a href="#" class="focus-only" title="Porte folio" data-lightbox="img/3.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
+					<figure>
+						<img src="img/3.jpg" class="img-responsive portfolio-thumb" alt="Image création d'un site internet pour un voyageur"/> <!-- Modification alt -->
+					</figure>
+				</a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -192,7 +207,11 @@
 				</p>
 			</div>
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /></a>
+				<a href="#" class="focus-only" title="Porte folio" data-lightbox="img/4.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
+					<figure>
+						<img src="img/4.jpg" class="img-responsive portfolio-thumb" alt="Image conception d'un site pour une agance de mariage" /> <!-- Modification alt -->
+					</figure>
+				</a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
 				</h3>
@@ -213,7 +232,7 @@
 				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 			</h2>
 			<div class="col-sm-12 text-center">
-				<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+				<a href="page2.html" title="Contact" class="focus-only btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 			</div>
 		</div>
 	</section>
@@ -231,22 +250,30 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="index.html" title="Twitter"><span class="fa fa-twitter icon-md"></span>
+								<p class="socialTitle">Twitter</p>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="index.html" title="Facebook"><span class="fa fa-facebook icon-md"></span>
+								<p class="socialTitle">Facebook</p>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="index.html" title="Dribbble"><span class="fa fa-dribbble icon-md"></span>
+								<p class="socialTitle">Dribbble</p>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="index.html" title="Instagram"><span class="fa fa-instagram icon-md"></span>
+								<p class="socialTitle">Instagram</p>
+							</a>
 						</div>
 					</div>
 					<!-- <div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div> --> <!-- Supression du div Keyword sans effet pour le SEO -->
@@ -302,6 +329,9 @@
 </main>
 <!-- Principal conteneur END -->
     
-
+	 <script src="./js/jquery-2.1.0.js"></script> 
+	 <script src="./js/bootstrap.js"></script> 
+	<!-- <script src="./js/blocs.js"></script> -->
+	<!-- <script src="./js/jquery.touchSwipe.js" defer></script> -->
 </body>
 </html>

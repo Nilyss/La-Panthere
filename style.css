@@ -13,6 +13,10 @@ button {
     outline: none!important;
 }
 
+.focus-only:focus {
+    border: 2px solid #000000;
+  }
+
 a:hover {
     text-decoration: none;
     cursor: pointer;
@@ -80,7 +84,7 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
+/*.bloc-bg-texture::before {                                Desactivation de la texture à des fin d'accecibilité (contraste du texte)
     content: "";
     background-size: 2px 2px;
     position: absolute;
@@ -88,12 +92,12 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-}
+}*/
 
-.texture-paper::before {
+/*.texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-}
+}*/
 
 .b-parallax {
     background-attachment: fixed;
@@ -703,7 +707,7 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -764,6 +768,10 @@ h4 {
     margin-top: 24px;
 }
 
+.socialTitle {
+    color: #FFFFFF!important;
+}
+
 .white {
     color: #FFFFFF!important;
 }
@@ -782,7 +790,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(68, 63, 47, 0.815);
     padding: 40px 40px 40px 40px;
 }
 
@@ -800,20 +808,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #95390F;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #95390F;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #95390F!important;
     color: #FFFFFF!important;
 }
 
@@ -851,7 +859,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -993,6 +1001,7 @@ h4 {
     .navbar-brand img {
         max-height: 40px;
         width: auto;
+        
     }
     .nav-invert .navbar-header {
         float: none;
