@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr"> <!-- Modification langue // accessibilité -->
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design">
-    <meta name="description" content="">
+    <!-- <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design"> --> <!--Suppression de balise inutile au référencement SEO-->
+    <meta name="description" content="La Panthère est une entreprise de webdesign basé à Lyon"> <!-- Ajout d'une description du contenu de la page -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
+	<meta name="robots" content="index, follow"/> <!-- Ajout meta afin d'indexer correctement les pages du site web -->
+    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
     
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -13,78 +14,81 @@
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+	<!-- déplace script à la fin du body afin de gagner en performance -->
 
-    <title>.</title>
+
+    <title>La Panthère - Entreprise Webdesign</title> <!-- Definition d'un title // SEO -->
 
     
 <!-- Analytics -->
  
 <!-- Analytics END -->
+
+<!--Google search console -->
     
 </head>
 <body>
 <!-- Principal conteneur -->
-<div class="page-container">
+<main class="page-container"> <!-- Remplacement <div> pour balise <main>-->
     
 <!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
-	<div class="container bloc-sm">
-
+<header class="bloc bgc-white l-bloc " id="bloc-0"> <!-- Remplacement <div> par balise <header>-->
+	<article class="container bloc-sm"> <!-- Remplacement <div> par balise <article>-->
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="paris web design logo agence web meilleure agence" height="40" /></a>
-				<div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
+				<!-- <div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div> --> <!-- Supression ligne Keyword : Non utilisé par algo Google -->
+				<a class="focus-only navbar-brand" href="index.html" title="Acceuil">
+					<figure>
+						<img src="img/agence-la-panthere-monochrome.svg" alt="Logo agence la Panthère" height="40" />
+					</figure>
+				</a> <!-- modification alt pour accecibilité -->
+				<!-- <div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div> --> <!-- Supression ligne Keyword : Non utilisé par algo Google -->
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					<span class="sr-only" title="Page d'acceuil">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
+						<a href="index.html" class="focus-only" title="Acceuil">Accueil</a>
 					</li>
 					<li>
 					</li>
 					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="page2.html" class="focus-only" title="Contact">Nous contacter</a> <!-- La seconde page étant un formulaire de contact, modifie le nom du lien-->
 					</li>
 				</ul>
 			</div>
 		</nav>
-	</div>
-</div>
+	</article>
+</header>
 <!-- bloc-0 END -->
 
 <!-- bloc-1-presentation -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
-	<div class="container bloc-lg">
+<article class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero"> <!-- Remplacement <div> par <artcile> -->
+	<section class="container bloc-lg"> <!-- Remplacement <div> par <section> -->
 		<div class="row tight-width-whitespace">
-			<div class="col-sm-12">
-				<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="Agence La Panthère, agence web paris, création logo paris" />
+			<figure class="col-sm-12"> <!-- Remplacement <div> par <figure> -->
+				<img src="img/logo.webp" class="center-block image-resize-mode" width="100" alt="Logo de l'agence La Panthère" /> <!-- Modification alt -->
 				<h1 class="text-center hero-bloc-text tc-white ">
 					Agence La Panthère
 				</h1>
 				<div class="text-center">
-					<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
+					<a href="page2.html" class="focus-only btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero" title="Contact">Contact</a>
 				</div>
-			</div>
+			</figure>
 		</div>
-	</div>
-</div>
+	</section>
+</article>
 <!-- bloc-1-presentation END -->
 
 <!-- bloc-2-services -->
-<div class="bloc bgc-white l-bloc" id="bloc-2-services">
-	<div class="container bloc-md">
+<article class="bloc bgc-white l-bloc" id="bloc-2-services"> <!-- Remplacement <div> par <Article> -->
+	<section class="container bloc-md"> <!-- Remplacement <div> par <section > -->
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.png" />
+				<!-- <img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.png" /> -->
+				<p class="agenceInfo">L'agence La Panthère est une agence de web desing qui aide les entreprises à devenir attractives et visibles sur Internet.</p> <!-- Supression <img> image textuelle, remplacement par <p> -->
 			</div>
 		</div>
 		<div class="row voffset-lg med-width-whitespace">
@@ -92,9 +96,9 @@
 				<div class="text-center">
 					<span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
-				<h3 class="mg-md text-center">
+				<h2 class="mg-md text-center">
 					Web design
-				</h3>
+				</h2>
 				<p class="text-center ">
 					Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
 				</p>
@@ -103,9 +107,9 @@
 				<div class="text-center">
 					<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
-				<h3 class="mg-md text-center">
+				<h2 class="mg-md text-center">
 					&nbsp;Stratégie
-				</h3>
+				</h2>
 				<p class="text-center ">
 					Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
 				</p>
@@ -114,9 +118,9 @@
 				<div class="text-center">
 					<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
-				<h3 class="mg-md text-center">
+				<h2 class="mg-md text-center">
 					Illustrations
-				</h3>
+				</h2>
 				<p class="text-center ">
 					Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
 				</p>
@@ -124,42 +128,49 @@
 		</div>
 		<div class="row voffset-lg voffset">
 			<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.png" />
-
+				<!-- <img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.png" /> --> <!-- Supression <img> image textuelle, remplacement par <p>, Revisite interligne et longueur de ligne ainsi que police pour acceciblité -->
+				<p class="agenceReview"><em>"L'agence La Panthère est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."</em></p>
+				<p class="agenceReviewCaption">Maxime Guibard, PDG de &Agrave; vos fourchettes</p>
 			</div>
 		</div>
-	</div>
-</div>
+	</section>
+</article>
 <!-- bloc-2-services END -->
 
 <!-- bloc-3-what-i-do -->
-<div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
-	<div class="container bloc-lg">
+<article class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do"> <!-- remplacement <div> par <article>-->
+	<section class="container bloc-lg"> <!-- Remplacement <div> par <section> -->
 		<div class="row tight-width-whitespace black-background">
 			<div class="col-sm-12">
-				<h2 class="mg-md text-center tc-white">
+				<h2 class="mg-md text-center tc-white"> 
 					Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<br>
 				</h2>
 				<p class="text-center white">
-					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br><a class="ltc-white bold-link" href="page2.html">Contactez notre équipe</a><br>
+					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br>
+					<a class="focus-only ltc-white bold-link Contact" href="page2.html" title ="contact">Contactez notre équipe</a><br>
 				</p>
 			</div>
 		</div>
-	</div>
-</div>
+	</section>
+</article>
 <!-- bloc-3-what-i-do END -->
 
 <!-- bloc-4-portfolio -->
-<div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
-	<div class="container bloc-lg">
+<article class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio"> <!-- Remplacement <div> par <article> -->
+	<section class="container bloc-lg"> <!-- Remplacement <div> par <section> -->
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title2.png" />
-			</div>
+				<!-- <img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title2.png" />--> <!-- Supression <img> image textuelle, remplacement par <h2>, Revisite interligne et longueur de ligne ainsi que police pour acceciblité -->
+				<h2 class="portFolio">Nous travaillons avec beaucoup de clients, voici nos réalisations.</h2>	
+				</div>
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" /></a>
+				<a href="#" class="focus-only" title="Porte folio" data-lightbox="img/1.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
+					<figure>
+						<img src="img/1.webp" alt="Image refonte d'un site web pour un journal local" class="img-responsive portfolio-thumb" /> <!-- Modification alt -->
+					</figure>
+				</a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -168,7 +179,11 @@
 				</p>
 			</div>
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
+				<a href="#" class="focus-only" title="Porte folio" data-lightbox="img/2.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
+					<figure>
+						<img src="img/2.webp" class="img-responsive portfolio-thumb" alt="image création d'un site web pour photographes" /> <!-- Modification alt-->
+					</figure>
+				</a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
@@ -179,7 +194,11 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
+				<a href="#" class="focus-only" title="Porte folio" data-lightbox="img/3.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
+					<figure>
+						<img src="img/3.webp" class="img-responsive portfolio-thumb" alt="Image création d'un site internet pour un voyageur"/> <!-- Modification alt -->
+					</figure>
+				</a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -188,7 +207,11 @@
 				</p>
 			</div>
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /></a>
+				<a href="#" class="focus-only" title="Porte folio" data-lightbox="img/4.webp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
+					<figure>
+						<img src="img/4.webp" class="img-responsive portfolio-thumb" alt="Image conception d'un site pour une agance de mariage" /> <!-- Modification alt -->
+					</figure>
+				</a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
 				</h3>
@@ -197,27 +220,27 @@
 				</p>
 			</div>
 		</div>
-	</div>
-</div>
+	</section>
+</article>
 <!-- bloc-4-portfolio END -->
 
 <!-- bloc-5-cta -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
-	<div class="container bloc-lg">
+<article class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta"> <!-- Remplacement <div> par <article> -->
+	<section class="container bloc-lg"> <!-- Remplacement <div> par <section> -->
 		<div class="row">
 			<h2 class="mg-md text-center tc-white">
 				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 			</h2>
 			<div class="col-sm-12 text-center">
-				<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+				<a href="page2.html" title="Contact" class="focus-only btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 			</div>
 		</div>
-	</div>
-</div>
+	</section>
+</article>
 <!-- bloc-5-cta END -->
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8"> <!-- Remplacement <div> par <footer> -->
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
@@ -227,27 +250,38 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="index.html" title="Twitter"><span class="fa fa-twitter icon-md"></span>
+								<p class="socialTitle">Twitter</p>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="index.html" title="Facebook"><span class="fa fa-facebook icon-md"></span>
+								<p class="socialTitle">Facebook</p>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="index.html" title="Dribbble"><span class="fa fa-dribbble icon-md"></span>
+								<p class="socialTitle">Dribbble</p>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="index.html" title="Instagram"><span class="fa fa-instagram icon-md"></span>
+								<p class="socialTitle">Instagram</p>
+							</a>
 						</div>
 					</div>
-					<div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
+					<!-- <div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div> --> <!-- Supression du div Keyword sans effet pour le SEO -->
 				</div>
-				<div class="row">
+
+				<!-- Supression partenaires & annuaires néfastes pour SEO -->
+
+				<!-- <div class="row">
 					<div class="col-sm-4">
 						Partenaires
 							<ul>
@@ -285,16 +319,20 @@
 							<li><a href="vraiseofiable.com">vraiseofiable.com</a></li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
-</div>
+</main>
 <!-- Principal conteneur END -->
     
-
+	 <script src="./js/jquery-2.1.0.js"></script> 
+	 <script src="./js/bootstrap.js"></script> 	 
+	<!-- <script src="./js/gmaps.js"></script> --> <!-- Script JS sans utilitée, aucune map n'est charger sur le site -->
+	<!-- <script src="./js/blocs.js"></script> -->
+	<!-- <script src="./js/jquery.touchSwipe.js" defer></script> -->
 </body>
 </html>
